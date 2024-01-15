@@ -1,3 +1,5 @@
+
+@login
 Feature: verify the login functionality
 
   Scenario: verify the login functionality by entering valid credentials
