@@ -18,7 +18,6 @@
     <Cucumber_JavaVersion>7.15.0</Cucumber_JavaVersion>
     <Cucubber_TestNGversion>7.15.0</Cucubber_TestNGversion>
     <GherkinVersion>27.0.0</GherkinVersion>
-
   </properties>
 
   <dependencies>
