@@ -41,9 +41,8 @@ public class ContactPage {
         act.sendKeys(Keys.TAB);
         act.sendKeys(Keys.ENTER);
         act.build().perform();
-        Thread.sleep(15000);
 
-        //act.sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.ENTER).perform();
+        Thread.sleep(10000);
        btnSubmmit.get(0).click();
     }
 
