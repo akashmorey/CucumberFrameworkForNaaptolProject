@@ -123,17 +123,13 @@ public class Steps {
         Thread.sleep(2000);
     }
 
-
-
-
-
     @Given("launch the browser and navigates to contact page")
     public void launch_the_browser_and_navigates_to_contact_page() {
         new HomePage().clickOnContactBtn();
     }
 
     @When("user should be enter valid inputs fot contact")
-    public void user_should_be_enter_valid_inputs_fot_contact(DataTable dataTable) {
+    public void user_should_be_enter_valid_inputs_fot_contact(DataTable dataTable) throws InterruptedException {
         ContactPage cp=new ContactPage();
 
         int size= cp.getSizeOfContactTextElement();

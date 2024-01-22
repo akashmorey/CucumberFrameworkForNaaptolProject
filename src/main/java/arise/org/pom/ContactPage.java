@@ -31,7 +31,7 @@ public class ContactPage {
         return size;
     }
 
-    public void enterCredentialsForContact(String firstname,String lastname,String email,String inputbox){
+    public void enterCredentialsForContact(String firstname,String lastname,String email,String inputbox) throws InterruptedException {
         inpFirstname.get(0).sendKeys(firstname);
         inpLastName.get(0).sendKeys(lastname);
         inpEmail.get(0).sendKeys(email);
@@ -41,6 +41,7 @@ public class ContactPage {
         act.sendKeys(Keys.TAB);
         act.sendKeys(Keys.ENTER);
         act.build().perform();
+        Thread.sleep(15000);
 
         //act.sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.ENTER).perform();
        btnSubmmit.get(0).click();
