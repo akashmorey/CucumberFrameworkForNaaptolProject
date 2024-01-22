@@ -13,6 +13,7 @@ import java.util.List;
 public class HomePage {
     @FindBy(xpath = "//a[text()='Practice']") private List<WebElement> btnPractice;
     @FindBy (xpath = "//a[text()='Test Login Page']") private  List<WebElement> btnLoginPage;
+    @FindBy (xpath = "//a[text()='Contact']") private List<WebElement> btnContact;
 
     public HomePage()
     {
@@ -21,5 +22,8 @@ public class HomePage {
     public void clickOnloginOrRegisterBtn(){
         btnPractice.get(0).click();
         btnLoginPage.get(0).click();
+    }
+    public void clickOnContactBtn(){
+        btnContact.get(0).click();
     }
 }

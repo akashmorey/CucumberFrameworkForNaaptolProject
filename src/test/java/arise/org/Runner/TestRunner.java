@@ -10,13 +10,14 @@ import org.testng.annotations.BeforeClass;
         features = "src/test/java/arise/org/Feature",
         glue = "arise/org/stepDefination",
         monochrome = true,
-        tags = "@login"
+        tags = "@contact"
 
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
     @BeforeClass
     public void preconditions(){
-        BaseTest.launchBrowser("FireFox");
+        BaseTest.launchBrowser("Chrome");
+        BaseTest.driver.manage().window().maximize();
     }
 
     @AfterClass
